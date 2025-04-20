@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio Web Belias Velas</title>
+
+  <!-- Enlace a la hoja de estilos de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <!--LINK CSS-->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <header>
+  <section class="container">
+    <h1>Belias Velas</h1>
+  </section>
+  </header>
+  <div class="barranav">
+    <nav>
+      <section class="container">
+    <ul>
+      <li><a href="cursos.html">Cursos</a></li>
+      <li><a href="tutoriales.html">Tutoriales</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </section>
+  </nav>
+  </div>
+  <div id="carousebanners" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="resources\banner_principal.jpg" class="d-block w-100" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="resources\tutorial_1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="resources\tutorial_4.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section id="banner"><img src="resources\banner_principal.jpg"
+      alt="Baner principal de vela"></section>
+
+  <section id="titulotabla">
+    <h2>Velas</h2>
+    <p>Encendé tu calma</p>
+  </section>
+  <main><!--TABLA DE IMAGENES-->
+    <section class="container">
+    <table>
+      <tr>
+        <th><img width=300 src="resources\producto_topping.jpg" alt="Vela artesania"><br>
+          Topping</th>
+        <th><img width=300 src="resources\producto_vela_decorada.jpg" alt="vela decorada"><br>
+          Velas Postre</th>
+        <th><img width=300 src="resources\producto_vela_caminos.jpeg" alt="vela decorada"><br>
+          Decoración</th>
+      </tr>
+      <tr>
+        <th><img width=300 src="resources\producto_vaso_largo.jpg" alt="Vela decorada"><br>
+          Vela de soja</th>
+        <th><img width=300 src="resources\producto-vaso.jpg" alt="Vela decorada"><br>
+          Vela miel de abeja</th>
+        <th><img width=300 src="resources\producto_vela.jpg" alt="Vela decorada"><br>
+          Vela en vaso</th>
+      </tr>
+      <tr>
+        <th><img width=300 src="resources\producto_vaso_redondo.jpg" alt="Vela decorativa"><br>
+          Vela esencia</th>
+        <th><img width=310 src="resources\producto_vela_esencia.jpg" alt="Vela decorativa"><br>
+          Aromaterapia</th>
+        <th><img width=270 src="resources\producto_vela_calm.jpg" alt="Vela decorada"><br>
+          Vela Calm</th>
+      </tr>
+    </table>
+  </section>
+  </main>
+  <!--iNFORMACION DE CURSOS-->
+  <hr><br><br><br><br><br>
+  <section id="icursos">
+    <p>Lorem ipsum dolor sit amet consectetur
+      adipiscing elit netus, elementum
+      dignissim sociis lobortis vehicula sociosq</p>
+    <input type="button" value="Ver mas">
+  </section>
+  <br><br><br><br><br>
+  <hr>
+  <!--INFORMACION DE TUTORIALES-->
+  <h3>Revisá nuestros tutoriales</h3>
+  <table>
+    <tr>
+      <th><img width=200 src="resources\tutorial_1.jpg" alt="Oferta de cursos"><br>
+        Producción masiva</th>
+      <th><img width=200 src="resources\tutorial_3.jpg" alt="Oferta de Cursos"><br>
+        Packaging otoñal</th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <hr>
+
+<!-- Enlace a los scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+<footer>
+  <h2>Sigamos en contacto</h2>
+  <p>lorem ipsum dolor sit amet consectetur
+    adipiscing elit netus, elementum
+    dignissim sociis lobortis vehicula sociosq</p>
+  <img src="resources\contacto_redsocial_tiktok.png" alt="Icono de tik tok">
+  <img src="resources\contacto_redsocial_instagram.png" alt="Icono de instagram">
+  <img src="resources\contacto_redsocial_facebook.png" alt="Icono de facebook">
+  <nav>
+    <ul>
+      <li><a href="C:\Users\Josefina Luz Bellina\Desktop\Proyecto Desarrollo Web\Cursos">Copyright</a></li>
+      <li><a href="C:\Users\Josefina Luz Bellina\Desktop\Proyecto Desarrollo Web\Cursos">Politica</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+      <li>Creado por MrsX</a></li>
+    </ul>
+  </nav>
+</footer>
+
+</html>

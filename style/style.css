@@ -1,0 +1,68 @@
+body {
+    background-color: #d4d2a5;
+}
+
+h1 {
+    color: #432818;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul li {
+    float: left;
+    color: #432818;
+    text-align: center;
+    list-style-type: none;
+    margin: 1;
+    padding: 82px 82px;
+    font-size: 20px;
+    position: relative;
+}
+
+#banner img {
+    width: 85%;
+    height: auto;
+
+}
+
+#titulotabla {
+    color: #a50104;
+    margin-left: 16px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table tr {
+    color: black;
+    font-size: 16px;
+    padding: auto;
+}
+
+#icursos {
+    color: #432818;
+    font-weight: bolder;
+    font-family: "Archivo", sans-serif;
+}
+
+footer {
+    color: #432818;
+    font-weight: bolder;
+    font-family: "Archivo", sans-serif;
+}
+
+footer img {
+    width: 5%;
+    float: none;
+}
+.barranav {
+width:100%;
+height:10vh;
+background-color: #c0c781;
+border: 1px solid #f9ebe0;
+display: flex;
+flex-direction:row;
+justify-content:center;
+align-items:center; 
+padding:20px;
+}
