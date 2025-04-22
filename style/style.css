@@ -1,5 +1,5 @@
 body {
-    background-color: #d4d2a5;
+    background-color: #f0efe0;
 }
 
 h1 {
@@ -19,18 +19,13 @@ nav ul li {
     font-size: 20px;
     position: relative;
 }
-
-#banner img {
-    width: 85%;
-    height: auto;
-
-}
-
 #titulotabla {
-    color: #a50104;
-    margin-left: 16px;
+    margin-left: 40px;
     font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:"Archivo", sans-serif;
+    color: black;
+
+
 }
 
 table tr {
@@ -43,12 +38,13 @@ table tr {
     color: #432818;
     font-weight: bolder;
     font-family: "Archivo", sans-serif;
+    margin-left: 3%;
 }
 
 footer {
     color: #432818;
     font-weight: bolder;
-    font-family: "Archivo", sans-serif;
+    font-family: 
 }
 
 footer img {
@@ -58,11 +54,53 @@ footer img {
 .barranav {
 width:100%;
 height:10vh;
-background-color: #c0c781;
+background-color: #f0efe0;
 border: 1px solid #f9ebe0;
 display: flex;
 flex-direction:row;
-justify-content:center;
 align-items:center; 
-padding:20px;
+
+font: bold!important;
+}
+.box-model {
+    width: 200px;
+    height: 100px;
+    padding: 10%;
+    border: 5px solid black;
+    margin: 100px;
+    display: table-row;
+    justify-content: center;
+    flex:auto;
+}
+
+.sticky-container {
+    height: 1000px;
+    background-color: lightyellow;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 50px;
+    padding: 10px;
+}
+
+a{
+  color: rgb(230, 104, 50);
+  text-decoration: none;
+}
+header { 
+    display: left;
+    margin-left: 3%;
+}
+h3{
+    margin-left:3%;
+}
+#infotutoriales{
+    margin-left: 3%!important;
+    }
+footer{
+    margin-left: 3%;
+}
+.contacto_formu{
+    margin left: 10%!
 }
