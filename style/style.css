@@ -101,6 +101,19 @@ h3{
 footer{
     margin-left: 3%;
 }
-.contacto_formu{
-    margin left: 10%!
+div.contacto_formu{
+    margin left: 3%;
+}
+h2 {
+    margin margin-left: 10%;
+}
+input{
+    text-decoration-color: black;
+    margin-left: 10%!important;
+}
+h2{
+    margin-left: 10% !important;
+}
+h5{
+    margin-left: 10% !important;
 }
