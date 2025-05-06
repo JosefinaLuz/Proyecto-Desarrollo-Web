@@ -1,31 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
 body {
-    background-color: #f0efe0;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%) !important;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
 }
-
 h1 {
-    color: #432818;
-    margin-left: 20px;
-    font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-nav ul li {
-    float: left;
-    color: #432818;
-    text-align: center;
-    list-style-type: none;
-    margin: 1;
-    padding: 82px 82px;
-    font-size: 20px;
+
+li a:hover {
+  background-color: #df7034;
+  color: rgb(64, 28, 10);
+  border-radius: 5px;
+}
+
+    
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 400px;
+  }
+#carouselExample{
+   
+    display: flex;
     position: relative;
+    margin-top: 0%;
+  }  
+  .carousel.slide {
+    margin: 0;
+    padding: 0;
 }
 #titulotabla {
     margin-left: 40px;
     font-weight: bolder;
-    font-family:"Archivo", sans-serif;
+    font-family: "Archivo", sans-serif;
     color: black;
-
-
 }
 
 table tr {
@@ -40,80 +56,189 @@ table tr {
     font-family: "Archivo", sans-serif;
     margin-left: 3%;
 }
-
+/* Footer */
 footer {
-    color: #432818;
-    font-weight: bolder;
-    font-family: 
-}
+    background: linear-gradient(to right, #fff0c1, #ffd391);
+    padding: 40px 0;
+  }
 
 footer img {
-    width: 5%;
-    float: none;
-}
-.barranav {
-width:100%;
-height:10vh;
-background-color: #f0efe0;
-border: 1px solid #f9ebe0;
-display: flex;
-flex-direction:row;
-align-items:center; 
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+  }
 
-font: bold!important;
+footer a {
+    text-decoration: none;
+    color: #d18f05;
+    font-weight: bold;  
 }
-.box-model {
-    width: 200px;
-    height: 100px;
-    padding: 10%;
-    border: 5px solid black;
-    margin: 100px;
-    display: table-row;
+footer ul {
+    padding: 0;
+    list-style: inline;
+    display: flex;
     justify-content: center;
-    flex:auto;
+    gap: 30px;
+  }
+  footer h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  footer img:hover {
+    transform: scale(1.1);
+  }
+  footer nav ul {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
 }
-
-.sticky-container {
-    height: 1000px;
-    background-color: lightyellow;
-}
-
-.sticky-box {
-    position: sticky;
-    top: 50px;
-    padding: 10px;
-}
-
-a{
-  color: rgb(230, 104, 50);
-  text-decoration: none;
-}
-header { 
-    display: left;
+  
+footer nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+footer nav a:hover {
+    text-decoration: underline;
+  }
+header {
+    text-align: left;
     margin-left: 3%;
 }
-h3{
-    margin-left:3%;
+
+h3 {
+    margin-left: 3%;
 }
-#infotutoriales{
-    margin-left: 3%!important;
+
+#infotutoriales {
+    margin-left: 3% !important;
+}
+h5 {
+    margin-left: 10% !important;
+}
+#logo img {
+    margin-top: 1%;
+  }    
+/* --- Estilos generales para mobile first --- */
+body {
+    font-size: 16px;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .barranav {
+    text-align: center;
+  }
+  
+  /* --- Carrusel --- */
+  .carousel-inner img {
+    max-height: 300px;
+  }
+  
+  /* --- Tabla de velas: que se apilen en pantallas chicas --- */
+  table {
+    width: 100%;
+    text-align: center;
+  }
+  table img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* --- RESPONSIVE BREAKPOINTS --- */
+  
+  /* Tablets en adelante */
+  @media (min-width: 768px) {
+    ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 40px;
     }
-footer{
-    margin-left: 3%;
+  
+    .carousel-inner img {
+      max-height: 400px;
+    }
+  }
+  
+  /* Pantallas grandes */
+  @media (min-width: 1024px) {
+    .carousel-inner img {
+      max-height: 500px;
+    }
+ }
+    table img {
+      width: 300px;
+    }
+/* Sección de formulario */
+section.container {
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 300%;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+  }
+  /* Botón de envío */
+button.btn-dark {
+    background-color: #d19005;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  button.btn-dark:hover {
+    background-color: #b97802;
+  }
+  footer ul {
+    flex-wrap: wrap;
+    gap: 1rem;
 }
-div.contacto_formu{
-    margin left: 3%;
+
+@media (max-width: 768px) {
+  footer img {
+    height: 25px;
+  }
+
+  footer ul {
+    gap: 0.5rem;
+    padding: 0;
+  }
 }
-h2 {
-    margin margin-left: 10%;
+.img-fluid{
+    border-radius: 10px;
+ }
+.lead {
+    text-align: center !important;
 }
-input{
-    text-decoration-color: black;
-    margin-left: 10%!important;
+.display-5 {
+    text-align: center !important;
 }
-h2{
-    margin-left: 10% !important;
+.display-6 {
+    text-align: center !important;
 }
-h5{
-    margin-left: 10% !important;
+.tuto{
+    border-radius: 10px;
 }
+.boton {
+    text-align: center;  /* Añadir esto */
+    margin-top: 20px;
+}
+
+.boton input[type="submit"] {
+    background-color: #d19005;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton input:hover {
+    background-color: #b97802;
+  }
