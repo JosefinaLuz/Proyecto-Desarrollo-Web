@@ -1,8 +1,0 @@
-# Archivos del sistema
-.DS_Store
-Thumbs.db
-
-# Carpetas temporales o de configuración de editores
-.vscode/
-.idea/
-node_modules/
