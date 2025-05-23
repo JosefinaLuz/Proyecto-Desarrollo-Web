@@ -1,17 +1,30 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-body {
-    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%) !important;
-    font-family: 'Segoe UI', sans-serif;
-    color: #333;
-}
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(90deg, #9f9f11 0%, #c67700 100%) !important;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h3, h5, #infotutoriales, #icursos, #titulotabla {
+  margin-left: 3%;
+  font-weight: bold;
+  font-family: "Archivo", sans-serif;
+  color: black;
+}
+
+h5 {
+  margin-left: 10% !important;
+}
 
 li a:hover {
   background-color: #df7034;
@@ -19,226 +32,285 @@ li a:hover {
   border-radius: 5px;
 }
 
-    
 .carousel-inner img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 300px;
+}
+.carousel.slide {
+  margin: 0;
+  padding: 0;
+}
+
+#carouselExample {
+  display: flex;
+  position: relative;
+  margin-top: 0%;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+table tr {
+  color: black;
+  font-size: 16px;
+}
+table img {
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+}
+
+section.container {
+  border-radius: 10px;
+  padding: 20px 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  section.container {
+    padding: 15px 10px;
+  }
+}
+
+main {
+  min-height: 85vh;
+}
+
+.boton {
+  text-align: center;
+  margin-top: 20px;
+}
+.boton input[type=submit] {
+  background-color: #d19005;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boton input[type=submit]:hover {
+  background-color: #b97802;
+}
+
+footer {
+  background: linear-gradient(to right, #fff0c1, #ffd391);
+  padding: 40px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer h3 {
+  margin-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+}
+footer img {
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+footer img:hover {
+  transform: scale(1.1);
+}
+footer a {
+  text-decoration: none;
+  color: #d19005;
+  font-weight: bold;
+}
+footer a:hover {
+  color: #b97802;
+}
+footer nav ul {
+  gap: 1.5rem;
+  padding: 0;
+}
+footer nav a {
+  color: #000;
+  font-weight: 500;
+}
+footer nav a:hover {
+  text-decoration: underline;
+}
+footer p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+.img-fluid,
+.tuto {
+  border-radius: 10px;
+}
+
+.display-5,
+.display-6,
+.lead {
+  text-align: center !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#logo img {
+  margin-top: 1%;
+}
+
+.barranav {
+  text-align: center;
+}
+
+#formularioxcontacto form button {
+  width: 150px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1550px) {
+  ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+  .carousel-inner img {
     max-height: 400px;
   }
-#carouselExample{
-   
-    display: flex;
-    position: relative;
-    margin-top: 0%;
-  }  
-  .carousel.slide {
-    margin: 0;
-    padding: 0;
 }
-#titulotabla {
-    margin-left: 40px;
-    font-weight: bolder;
-    font-family: "Archivo", sans-serif;
-    color: black;
-}
-
-table tr {
-    color: black;
-    font-size: 16px;
-    padding: auto;
-}
-
-#icursos {
-    color: #432818;
-    font-weight: bolder;
-    font-family: "Archivo", sans-serif;
-    margin-left: 3%;
-}
-/* Footer */
-footer {
-    background: linear-gradient(to right, #fff0c1, #ffd391);
-    padding: 40px 0;
-  }
-
-footer img {
-    height: 30px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-  }
-
-footer a {
-    text-decoration: none;
-    color: #d18f05;
-    font-weight: bold;  
-}
-footer ul {
-    padding: 0;
-    list-style: inline;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  footer h3 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  footer img:hover {
-    transform: scale(1.1);
-  }
-  footer nav ul {
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    padding: 0;
-    list-style: none;
-}
-  
-footer nav a {
-    color: #000;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-footer nav a:hover {
-    text-decoration: underline;
-  }
-header {
-    text-align: left;
-    margin-left: 3%;
-}
-
-h3 {
-    margin-left: 3%;
-}
-
-#infotutoriales {
-    margin-left: 3% !important;
-}
-h5 {
-    margin-left: 10% !important;
-}
-#logo img {
-    margin-top: 1%;
-  }    
-/* --- Estilos generales para mobile first --- */
-body {
-    font-size: 16px;
-  }
-  ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-  }
-  .barranav {
-    text-align: center;
-  }
-  
-  /* --- Carrusel --- */
+@media (min-width: 1024px) {
   .carousel-inner img {
-    max-height: 300px;
-  }
-  
-  /* --- Tabla de velas: que se apilen en pantallas chicas --- */
-  table {
-    width: 100%;
-    text-align: center;
+    max-height: 500px;
   }
   table img {
-    width: 90%;
-    max-width: 300px;
-    height: auto;
+    width: 300px;
   }
-  
-  /* --- RESPONSIVE BREAKPOINTS --- */
-  
-  /* Tablets en adelante */
-  @media (min-width: 768px) {
-    ul {
-      flex-direction: row;
-      justify-content: center;
-      gap: 40px;
-    }
-  
-    .carousel-inner img {
-      max-height: 400px;
-    }
-  }
-  
-  /* Pantallas grandes */
-  @media (min-width: 1024px) {
-    .carousel-inner img {
-      max-height: 500px;
-    }
- }
-    table img {
-      width: 300px;
-    }
-/* Sección de formulario */
-section.container {
-    border-radius: 10px;
-    padding: 40px;
-    max-width: 300%;
-    box-shadow: 0 0 30px rgba(0,0,0,0.1);
-  }
-  /* Botón de envío */
-button.btn-dark {
-    background-color: #d19005;
-    border: none;
-    padding: 10px 25px;
-    font-weight: bold;
-    border-radius: 10px;
-  }
-  
-  button.btn-dark:hover {
-    background-color: #b97802;
-  }
-  footer ul {
-    flex-wrap: wrap;
-    gap: 1rem;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 @media (max-width: 768px) {
-  footer img {
-    height: 25px;
+  .navbar-collapse {
+    background-color: #fcff9e;
+    padding: 10px 0;
   }
-
-  footer ul {
-    gap: 0.5rem;
+  .navbar-toggler {
+    border: none;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  header .navbar {
+    padding: 10px;
+    text-align: center;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+  h3, h5, #infotutoriales, #icursos, #titulotabla {
+    font-size: 1.1rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  section.container {
+    padding: 15px 20px;
+    margin: 0 10px;
+  }
+  #formularioxcontacto form .form-control {
+    font-size: 14px;
+  }
+  #formularioxcontacto form button {
+    width: 100%;
+  }
+  table img {
+    max-width: 100%;
+    height: auto;
+  }
+  footer {
+    padding: 20px 10px;
+  }
+  footer h3 {
+    font-size: 1.1rem;
+  }
+  footer nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
     padding: 0;
   }
+  footer img {
+    height: 30px;
+  }
+  .carousel-inner img {
+    max-height: 250px;
+  }
 }
-.img-fluid{
-    border-radius: 10px;
- }
-.lead {
-    text-align: center !important;
-}
-.display-5 {
-    text-align: center !important;
-}
-.display-6 {
-    text-align: center !important;
-}
-.tuto{
-    border-radius: 10px;
-}
-.boton {
-    text-align: center;  /* Añadir esto */
-    margin-top: 20px;
+body {
+  background: linear-gradient(180deg, #9f9f11 0%, #c67700 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.boton input[type="submit"] {
-    background-color: #d19005;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.boton input:hover {
-    background-color: #b97802;
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(180deg, #9f9f11 0%, #c67700 100%) !important;
   }
+}
+@media (max-width: 768px) {
+  .container, .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .col-md-4 {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.contenido-productos {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+@media (max-width: 768px) {
+  .contenido-productos {
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
